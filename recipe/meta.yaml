@@ -1,4 +1,4 @@
-{% set version = "0.11.3" %}
+{% set version = "0.11.4" %}
 
 package:
   name: tablib
@@ -7,7 +7,7 @@ package:
 source:
   fn: tablib-{{ version }}.tar.gz
   url: https://github.com/kennethreitz/tablib/archive/v{{ version }}.tar.gz
-  sha256: f532a5359ac69d4a9e977b5ec26044c9c9a4ec7d67cf9e97cdd78ae1fb50891c
+  sha256: 9eb9f50b29a820080b24436e60d8bc09637f3017471269f853356451a1f09af5
 
 build:
   number: 0
@@ -43,8 +43,10 @@ test:
     - tablib.packages.xlrd3  # [py3k]
     - tablib.packages.xlwt3  # [py3k]
     - tablib.packages.yaml3  # [py3k]
+  source_files:
+    - test_tablib.py
   commands:
-    - python '{{ environ["SRC_DIR"] }}/test_tablib.py'  # [not win]
+    - python test_tablib.py  # [not win]
 
 about:
   home: http://python-tablib.org
