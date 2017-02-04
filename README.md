@@ -11,6 +11,18 @@ Summary: Format agnostic tabular data library (XLS, JSON, YAML, CSV)
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/tablib-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/tablib-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/tablib-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/tablib-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/tablib-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/tablib-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/tablib/badges/version.svg)](https://anaconda.org/conda-forge/tablib)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/tablib/badges/downloads.svg)](https://anaconda.org/conda-forge/tablib)
+
 Installing tablib
 =================
 
@@ -66,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/tablib-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/tablib-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/tablib-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/tablib-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/tablib-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/tablib-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/tablib/badges/version.svg)](https://anaconda.org/conda-forge/tablib)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/tablib/badges/downloads.svg)](https://anaconda.org/conda-forge/tablib)
 
 
 Updating tablib-feedstock
