@@ -1,4 +1,4 @@
-{% set version = "0.11.4" %}
+{% set version = "0.11.5" %}
 
 package:
   name: tablib
@@ -6,8 +6,8 @@ package:
 
 source:
   fn: tablib-{{ version }}.tar.gz
-  url: https://github.com/kennethreitz/tablib/archive/v{{ version }}.tar.gz
-  sha256: 9eb9f50b29a820080b24436e60d8bc09637f3017471269f853356451a1f09af5
+  url: https://pypi.io/packages/source/t/tablib/tablib-{{ version }}.tar.gz
+  sha256: 27aafe2bf6573472f4ab330b2e46e9ebf01942a204bfaee784191848411afe05
 
 build:
   number: 0
@@ -19,30 +19,19 @@ requirements:
     - setuptools
   run:
     - python
+    - xlrd
+    - odfpy
+    - openpyxl
+    - unicodecsv
+    - xlrd
+    - xlwt
+    - pyyaml
 
 test:
   imports:
     - tablib
     - tablib.formats
     - tablib.packages
-    - tablib.packages.dbfpy
-    - tablib.packages.odf
-    - tablib.packages.omnijson
-    - tablib.packages.openpyxl  # [py2k]
-    - tablib.packages.openpyxl.reader  # [py2k]
-    - tablib.packages.openpyxl.shared  # [py2k]
-    - tablib.packages.openpyxl.writer  # [py2k]
-    - tablib.packages.openpyxl3  # [py3k]
-    - tablib.packages.openpyxl3.reader  # [py3k]
-    - tablib.packages.openpyxl3.shared  # [py3k]
-    - tablib.packages.openpyxl3.writer  # [py3k]
-    - tablib.packages.unicodecsv
-    - tablib.packages.xlrd  # [py2k]
-    - tablib.packages.xlwt  # [py2k]
-    - tablib.packages.yaml  # [py2k]
-    - tablib.packages.xlrd3  # [py3k]
-    - tablib.packages.xlwt3  # [py3k]
-    - tablib.packages.yaml3  # [py3k]
   source_files:
     - test_tablib.py
   commands:
