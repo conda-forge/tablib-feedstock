@@ -19,13 +19,14 @@ requirements:
     - setuptools
   run:
     - python
-    - xlrd
     - odfpy
     - openpyxl
+    - pandas
+    - pyyaml
     - unicodecsv
     - xlrd
+    - xlrd
     - xlwt
-    - pyyaml
 
 test:
   imports:
