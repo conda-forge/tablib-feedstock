@@ -14,9 +14,7 @@ Summary: Format agnostic tabular data library (XLS, JSON, YAML, CSV)
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/tablib-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/tablib-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/tablib-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/tablib-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/tablib-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/tablib-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/tablib-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/tablib-feedstock)
 
 Current release info
 ====================
