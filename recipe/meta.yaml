@@ -14,21 +14,21 @@ build:
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
-  build:
+  host:
     - python
     - pip
   run:
     - python
     - odfpy
-    - openpyxl
-    - pandas
-    - pyyaml
-    - unicodecsv
-    - xlrd
+    - openpyxl >=2.4.0
+    - backports.csv
     - xlrd
     - xlwt
+    - pyyaml
 
 test:
+  requires:
+    - pandas
   imports:
     - tablib
     - tablib.formats
