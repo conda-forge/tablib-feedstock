@@ -1,4 +1,4 @@
-{% set version = "0.12.1" %}
+{% set version = "0.13.0" %}
 
 package:
   name: tablib
@@ -6,29 +6,29 @@ package:
 
 source:
   url: https://pypi.io/packages/source/t/tablib/tablib-{{ version }}.tar.gz
-  sha256: b8cf50a61d66655229993f2ee29220553fb2c80403479f8e6de77c0c24649d87
+  sha256: 5f33c079b07eb10cf9c4b4696add2ecf32c89db7729240546ecdcd5c92f67e13
 
 build:
   number: 0
   noarch: python
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
-  build:
+  host:
     - python
-    - setuptools
+    - pip
   run:
     - python
     - odfpy
-    - openpyxl
-    - pandas
-    - pyyaml
-    - unicodecsv
-    - xlrd
+    - openpyxl >=2.4.0
+    - backports.csv
     - xlrd
     - xlwt
+    - pyyaml
 
 test:
+  requires:
+    - pandas
   imports:
     - tablib
     - tablib.formats
@@ -36,7 +36,7 @@ test:
   source_files:
     - test_tablib.py
   commands:
-    - python test_tablib.py  # [not win]
+    - python test_tablib.py
 
 about:
   home: http://python-tablib.org
