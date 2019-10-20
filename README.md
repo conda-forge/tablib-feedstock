@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About tablib
 ============
 
@@ -18,8 +14,15 @@ Summary: Format agnostic tabular data library (XLS, JSON, YAML, CSV)
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/tablib-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/tablib-feedstock)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4374&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/tablib-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
