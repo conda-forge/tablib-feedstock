@@ -15,19 +15,20 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.5
     - pip
     - setuptools_scm
   run:
-    - python
+    - python >=3.5
     - setuptools
+    - markuppy
     - odfpy
     - openpyxl >=2.4.0
-    - backports.csv
-    - markuppy
+    - pandas
+    - pyyaml
+    - tabulate
     - xlrd
     - xlwt
-    - pyyaml
 
 test:
   requires:
