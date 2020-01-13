@@ -1,4 +1,4 @@
-{% set version = "0.14.0" %}
+{% set version = "1.0.0" %}
 
 package:
   name: tablib
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/t/tablib/tablib-{{ version }}.tar.gz
-  sha256: 6336e7aa3f0e5894b47270a3dc639cc2e78eb823c7ccb8c4512fb408cdc18d08
+  sha256: ff3172802e8dd7fb795867942f5238f6c90e2d4e90ad6233c1a796cdfc63bb35
 
 build:
   number: 0
