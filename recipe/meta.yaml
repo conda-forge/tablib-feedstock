@@ -1,4 +1,4 @@
-{% set version = "1.1.0" %}
+{% set version = "2.0.0" %}
 
 package:
   name: tablib
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/t/tablib/tablib-{{ version }}.tar.gz
-  sha256: 4d1909aa3ff1c85ba97ad16176c0aeec33c8e894dc7ea6f10f2dd44701e99ba7
+  sha256: 8cc2fa10bc37219ac5e76850eb7fbd50de313c7a1a7895c44af2a8dd206b7be7
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -32,6 +32,7 @@ requirements:
 
 test:
   requires:
+    - pip
     - pandas
   imports:
     - tablib
@@ -41,12 +42,14 @@ test:
     - tests/test_tablib.py
   commands:
     - python tests/test_tablib.py
+    - pip check
 
 about:
-  home: http://python-tablib.org
+  home: https://pypi.org/project/tablib/
+  summary: Format agnostic tabular data library (XLS, JSON, YAML, CSV)
+  dev_url: https://github.com/jazzband/tablib
   license: MIT
   license_file: LICENSE
-  summary: 'Format agnostic tabular data library (XLS, JSON, YAML, CSV)'
 
 extra:
   recipe-maintainers:
