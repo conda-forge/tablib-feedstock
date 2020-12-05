@@ -1,15 +1,15 @@
 About tablib
 ============
 
-Home: http://python-tablib.org
+Home: https://pypi.org/project/tablib/
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tablib-feedstock/blob/master/LICENSE.txt)
 
 Summary: Format agnostic tabular data library (XLS, JSON, YAML, CSV)
 
-
+Development: https://github.com/jazzband/tablib
 
 Current build status
 ====================
