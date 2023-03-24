@@ -1,11 +1,11 @@
-About tablib
-============
+About tablib-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tablib-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/tablib/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tablib-feedstock/blob/main/LICENSE.txt)
 
 Summary: Format agnostic tabular data library (XLS, JSON, YAML, CSV)
 
