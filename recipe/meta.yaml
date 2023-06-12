@@ -34,7 +34,7 @@ requirements:
 test:
   requires:
     - pip
-    - pandas
+    - pytest
   imports:
     - tablib
     - tablib.formats
