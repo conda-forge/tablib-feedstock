@@ -15,15 +15,16 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
+    - setuptools >=58
+    - setuptools-scm >=6.2
     - pip
-    - setuptools_scm
   run:
-    - python >=3.7
-    - setuptools
+    - python >=3.8
+    # optional [all]
     - markuppy
     - odfpy
-    - openpyxl >=2.4.0
+    - openpyxl >=2.6.0
     - pandas
     - pyyaml
     - tabulate
