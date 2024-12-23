@@ -5,22 +5,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/t/tablib/tablib-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/t/tablib/tablib-{{ version }}.tar.gz
   sha256: f9db84ed398df5109bd69c11d46613d16cc572fb9ad3213f10d95e2b5f12c18e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - setuptools >=58
     - setuptools-scm >=6.2
     - pip
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     # optional [all]
     - markuppy
     - odfpy
@@ -35,6 +35,7 @@ test:
   requires:
     - pip
     - pytest
+    - python {{ python_min }}
   imports:
     - tablib
     - tablib.formats
